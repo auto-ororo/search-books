@@ -51,3 +51,8 @@ Kotlin Ver1.3.71
 <img src="https://user-images.githubusercontent.com/23581157/82151417-9cb75b80-9896-11ea-99a6-74e0a5424c33.png" width=40% height=40% >
 
 本をタップすると､書籍名がToast表示されます｡
+
+## 実行方法
+
+1. プロジェクトをAndroid Studioで開く
+2. メニュー欄｢Run｣ -> ｢Run 'app'｣をクリックしてアプリを実行する
