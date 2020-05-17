@@ -7,6 +7,9 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import timber.log.Timber
 
+/**
+ * 本情報を取り扱うRepository
+ */
 class BookRepository(
     private val googleBooksApiService: GoogleBooksApiService
 ) : IBookRepository {

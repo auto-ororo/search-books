@@ -7,7 +7,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.*
 
 /**
- * Retrofitを用いてCalilとのAPI通信を行うサービスを定義
+ * Retrofitを用いてAPI通信を行うサービスを定義
  */
 
 /**

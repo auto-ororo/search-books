@@ -136,7 +136,7 @@ class BookListAdapter(
     RecyclerView.Adapter<BookListViewHolder>() {
 
     /**
-     * リストに表示する曲情報
+     * リストに表示する本情報
      */
     var books: List<Book> = emptyList()
         set(value) {
@@ -173,7 +173,7 @@ class BookListAdapter(
 }
 
 /**
- * 別ファイルで定義したTrackレイアウトをつなげるViewHolder
+ * 別ファイルで定義したレイアウトをつなげるViewHolder
  */
 class BookListViewHolder(val viewDataBinding: BookItemBinding) :
     RecyclerView.ViewHolder(viewDataBinding.root) {

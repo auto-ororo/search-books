@@ -3,7 +3,7 @@ package com.example.searchbooks.network
 import com.squareup.moshi.JsonClass
 
 /**
- * アプリ ー SpotifyAPI間のAPI通信で利用するDTO群を定義
+ * アプリ ー API間のAPI通信で利用するDTO群を定義
  */
 
 /**

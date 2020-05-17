@@ -9,6 +9,9 @@ import com.example.searchbooks.R
 import retrofit2.HttpException
 import java.io.IOException
 
+/**
+ * 本検索･一覧画面のViewModel
+ */
 class BooksViewModel(application: Application, private val bookRepository: IBookRepository) :
     AndroidViewModel(application) {
 

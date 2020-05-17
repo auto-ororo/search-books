@@ -4,6 +4,10 @@ import android.location.Location
 import androidx.lifecycle.LiveData
 import com.example.searchbooks.domain.Book
 
+
+/**
+ * 本情報を取り扱うRepositoryのインターフェース
+ */
 interface IBookRepository {
     /**
      * 本情報一覧
