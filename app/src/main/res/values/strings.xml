@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">SearchBooks</string>
+
+    <string name="search_text">検索</string>
+    <string name="search_hint">キーワードを入力して下さい</string>
+    <string name="title_dialog_error">ERROR</string>
+    <string name="no_data_error">お探しの本が見つかりませんでした｡</string>
+    <string name="general_error_message">エラーが発生しました｡:%1$s</string>
+    <string name="no_connection_error_message">サーバーとの通信に失敗しました｡\nお使いの端末がインターネットに繋がっていない可能性があります｡</string>
+    <string name="request_fail_message">サーバー側に予期せぬエラーが発生しました。\nしばらく時間を置いて再度お試しください。</string>
+
 </resources>
