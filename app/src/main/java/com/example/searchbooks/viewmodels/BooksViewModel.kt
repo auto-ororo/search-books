@@ -6,6 +6,8 @@ import com.example.searchbooks.SearchBooksApplication
 import com.example.searchbooks.repository.IBookRepository
 import kotlinx.coroutines.launch
 import com.example.searchbooks.R
+import retrofit2.HttpException
+import java.io.IOException
 
 class BooksViewModel(application: Application, private val bookRepository: IBookRepository) :
     AndroidViewModel(application) {
@@ -55,7 +57,21 @@ class BooksViewModel(application: Application, private val bookRepository: IBook
                     showMessageDialog(getApplication<Application>().getString(R.string.no_data_error))
                 }
             } catch (e: Exception) {
-                showMessageDialog(e.toString())
+                val msg = when (e) {
+                    is HttpException -> {
+                        getApplication<Application>().getString(R.string.request_fail_message)
+                    }
+                    is IOException -> {
+                        getApplication<Application>().getString(R.string.no_connection_error_message)
+                    }
+                    else -> {
+                        getApplication<Application>().getString(
+                            R.string.general_error_message,
+                            e.javaClass
+                        )
+                    }
+                }
+                showMessageDialog(msg)
             }
         }
     }
