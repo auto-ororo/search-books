@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">SearchBooks</string>
+
+    <string name="search_text">検索</string>
+    <string name="search_hint">キーワードを入力して下さい</string>
+    <string name="title_dialog_error">ERROR</string>
+    <string name="no_data_error">お探しの本が見つかりませんでした｡</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
